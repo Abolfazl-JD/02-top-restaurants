@@ -1,11 +1,18 @@
+<script setup lang="ts">
+useHead({
+  title: "Top 50 restaurants",
+  meta: [
+    {name : "description",  content : "this is my cool restaurants page"}
+  ]
+})
+
+// definePageMeta({
+//   layout : false
+// })
+</script>
+
 <template>
   <div>
-    <Html>
-      <Head>
-        <Title> Top 50 restaurants </Title>
-        <Meta name="description" content="this is my cool restaurants page" />
-      </Head>
-    </Html>
     <NuxtLayout name="custom">
       <div class="container mx-auto px-10">
         <RestaurantTable />
